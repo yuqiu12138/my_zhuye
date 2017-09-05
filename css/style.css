@@ -89,6 +89,27 @@ body {
     line-height: 80px;
     border: none; 
 }
+.ball_click2 {
+	width: 80px;
+	height:80px;
+	margin-left: 30px;
+	margin-top: 40px;
+    background-color: #00A78E;
+    color: #FFF;
+    text-align: center;
+    border: none; 
+  
+}
+.ball2 {
+	width: 80px;
+	height:80px;
+	margin-left: 30px;
+	margin-top: 40px;
+    background-color: #FFF;
+    color: #00A78E;
+    text-align: center;
+    border: none;
+}
 .box_move a {
     color: #FFF;
     font-weight: bold;
