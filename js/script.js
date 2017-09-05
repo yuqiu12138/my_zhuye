@@ -42,6 +42,23 @@ $(function() {
                 }
             }
         });
+         //小屏幕情况按钮动画
+       
+        $('.ball_group2 button').on('click',function() {
+            if(!$(this).is('.ball_click2')) {
+                $text = $(this).attr('mark');           
+                if(!$('.box_move *').is(':animated')) {
+                    $('.ball_click2').removeClass().addClass('ball2');
+                    $(this).removeClass().addClass('ball_click2');
+                    $('.box_move div').animate({opacity:0},1000,function() {
+                        $('.box_move div').empty().append($text);
+                        $('.box_move div').animate({opacity:1},1000);
+                    });
+                }
+            }
+        });
+        
+       
         //工作经历按钮
         var page = 1;
         $('button.next').click(function() {
